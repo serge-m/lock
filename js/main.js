@@ -15,9 +15,6 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
-  // Initiate the wowjs
-  new WOW().init();
-
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {opacity:'show'},
