@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   #nav-menu-container {
     display: none;
   }
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   #mobile-nav-toggle {
     display: inline;
   }
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 998;
   background: rgba(52, 59, 64, 0.9);
-  left: -260px;
+  right: -260px;
   width: 260px;
   overflow-y: auto;
   transition: 0.4s;
@@ -449,7 +449,7 @@ body.mobile-nav-active {
 }
 
 body.mobile-nav-active #mobile-nav {
-  left: 0;
+  right: 0px;
 }
 
 body.mobile-nav-active #mobile-nav-toggle {
