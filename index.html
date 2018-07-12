@@ -85,17 +85,38 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Locked out of apartment?</h1>
+      <h1>Locked out of your apartment?</h1>
       <h1>Call a locksmith</h1>
 
-      <input type="text" name="name" class="form-control" id="form-phone" placeholder="Phone number"
-             data-rule="minlen:8" data-msg="Please enter at least 8 chars"/>
-      <input type="text" name="name" class="form-control" id="form-address" placeholder="Your address"
-             data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
-      <a href="#about" class="btn-get-started">Request a callback</a>
-      <a href="#about" class="btn-get-started">Request WhatsApp chat</a>
-      <a href="#about" class="btn-get-started"></a>
-      <p>Estimated price: 50 Euro (may vary depending on the complexity)</p>
+      <form action="request.html" method="get">
+        <div class="container">
+          <div class="row form-group">
+            <div class="col-md-6 offset-md-3">
+              <input name="phone" type="text" class="form-control" id="formPhone" placeholder="Phone number"
+                     data-rule="minlen:8" data-msg="Please enter at least 8 chars">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <input name="address" type="text" class="form-control" id="formAddress" placeholder="Address"
+                     data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <button type="submit" class="btn-get-started" name="action" value="call_back" formaction="request.html">Call me back!</button>
+              <button type="submit" class="btn-get-started" name="action" value="text_back" formaction="request.html">
+                Text me
+                <img height="32" width="32" src="img/WhatsApp_Logo.png" style="margin-top: -20px;margin-bottom: -20px;">
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+      <p>Estimated service price: 50 Euro (may vary depending on the complexity)</p>
     </div>
   </section><!-- #hero -->
 
